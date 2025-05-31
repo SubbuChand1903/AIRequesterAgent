@@ -22,12 +22,12 @@ def test_azure_openai():
   base_url = local_config.base_endpoint
   url = f"{base_url}/api/v1/jwt/auth"
   headers = {
-      "X-Slx-Alias": "bhsrel",
+      "X-Slx-Alias": "",
       "Content-Type": "application/json"
   }
   payload = {
   "username": "system",
-  "password": "Ph!los0ph!c@l"
+  "password": "P!c@l"
 }
   response = requests.Session().post(url, headers=headers, json=payload, timeout=10)
   jwt_token = response.json().get("data").get("response").get("token")
