@@ -19,8 +19,8 @@ def main():
     url = f"{base_url}/api/v1/jwt/auth"
 
     username = "system"
-    password = "Ph!los0ph!c@l"
-    alias = "bhsrel"
+    password = "Ph!c@l"
+    alias = ""
 
     headers = {
         "X-Slx-Alias": f"{alias}",
